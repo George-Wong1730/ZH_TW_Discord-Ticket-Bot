@@ -1,6 +1,6 @@
 #Version: 1.9
-#GitHub: https://github.com/Simoneeeeeeee/Discord-Select-Menu-Ticket-Bot
-#Discord: discord.gg/ycZDpat7dB
+#GitHub: https://github.com/George-Wong1730/ZH_TW_Discord-Ticket-Bot/
+#
 
 import discord
 import json
