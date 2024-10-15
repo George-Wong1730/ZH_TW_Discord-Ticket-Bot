@@ -24,31 +24,32 @@
 
         pip install chat-exporter
 
-        or you can use pip install -r requirements.txt
+        或者使用 `pip install -r requirements.txt`
     ``` 
-- ### 如何設定`config.json`
+- ### 設定`config.json`
     ```sh
         {
-      "token": "",                 <- Your Bot Token from https://discord.dev
-      "guild_id": 123,             <- Your Server ID aka Guild ID  
-      "ticket_channel_id": 123,    <- Ticket Channel where the Bot should send the SelectMenu + Embed
-      "category_id_1": 123,        <- Category 1 where the Bot should open the Ticket for the Ticket option 1
-      "category_id_2": 123,        <- Category 2 where the Bot should open the Ticket for the Ticket option 2
-      "team_role_id_1": 123,       <- Staff Team role id
-      "team_role_id_2": 123,       <- Staff Team role id
-      "log_channel_id": 123,       <- Where the Bot should log everything 
-      "timezone": "CET"            <- Timezone use https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List and use the Category 'Time zone abbreviation' for example: Europe = CET, America = EST so you put in EST or EST ...
+      "token": "",                 <- 你的機器人 Token from https://discord.dev
+      "guild_id": 123,             <- 你的伺服器 ID aka Guild ID  
+      "ticket_channel_id": 123,    <- 機器人應發送 SelectMenu + Embed 的工單通道
+      "category_id_1": 123,        <- 類別 1，機器人應開啟工單選項 1 的工單
+      "category_id_2": 123,        <- 類別 2，機器人應開啟工單選項 2 的工單
+      "team_role_id_1": 123,       <- 員工團隊角色 ID
+      "team_role_id_2": 123,       <- 員工團隊角色 ID
+      "log_channel_id": 123,       <- 機器人應該記錄所有內容的地方
+      "timezone": "CET"            <- 時區使用
+     https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List and use the Category 'Time zone abbreviation' for example: Europe = CET, America = EST so you put in EST or EST ...
       "embed_title": "Support-Tickets",
       "embed_description": "Here you can open a Support Ticket!"
     ```
-- ### All Commands
+- ### 所有指令
   - `/ticket`
   - `/delete`
   - `/add`
   - `/remove`
 
-- ### How to use Custom emojis from your Discors Server in the Select Menu
-  - `Type in the Chat \ but do not send it, now Choose one Emoji that is one your server and press on it. Now it should look like that \<:emoji_name:emoji_id> now just remove the \ and paste the rest in your Code and here you go.`
+- ### 如何在選擇選單中使用 Discord 伺服器中的自訂表情符號
+  - `輸入聊天 \ 但不要發送它，現在選擇一個屬於您的伺服器的表情符號並按下它。現在它應該看起來像 \<:emoji_name:emoji_id> 現在只需刪除 \ 並將其餘部分貼到您的程式碼中即可。`
 - ### Discord
   - <a href="https://discord.gg/ycZDpat7dB">Join my DC Server for help and create an Ticket</a>
   - <a>If you want to Support me give this Project a Star </a>
