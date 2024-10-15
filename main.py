@@ -15,8 +15,8 @@ with open("config.json", mode="r") as config_file:
 
 BOT_TOKEN = config["token"]  #Your Bot Token from https://discord.dev
 GUILD_ID = config["guild_id"] #Your Server ID aka Guild ID  
-CATEGORY_ID1 = config["category_id_1"] #Category 1 where the Bot should open the Ticket for the Ticket option 1
-CATEGORY_ID2 = config["category_id_2"] #Category 2 where the Bot should open the Ticket for the Ticket option 2
+CATEGORY_ID1 = config["category_id_1"] #類別 1，機器人應開啟工單選項 1 的工單
+CATEGORY_ID2 = config["category_id_2"] #類別 2，機器人應開啟工單選項 2 的工單
 
 bot = commands.Bot(intents=discord.Intents.all())
 
@@ -25,7 +25,7 @@ async def on_ready():
     print(f'Bot Started | {bot.user.name}')
     richpresence.start()
 
-#Bot Status, Counting all opened Tickets in the Server. You need to add/change things if you have more or less than 2 Categories
+#機器人狀態，計算伺服器中所有開啟的工單。如果您的類別多於或少於 2 個，則需要新增/變更內容
 @tasks.loop(minutes=1)
 async def richpresence():
     guild = bot.get_guild(GUILD_ID)
